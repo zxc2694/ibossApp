@@ -21,6 +21,7 @@
                 android:layout_height="wrap_content"
                 />
             <TextView
+                android:id="@+id/inbound_id"
                 android:layout_width="12dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="9"
@@ -36,6 +37,7 @@
                 android:layout_height="wrap_content"
                 />
             <TextView
+                android:id="@+id/outbound_id"
                 android:layout_width="0dp"
                 android:layout_weight="9"
                 android:layout_height="wrap_content"
@@ -64,6 +66,7 @@
                 android:layout_height="wrap_content"
                 />
             <TextView
+                android:id="@+id/report_id"
                 android:layout_width="12dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="9"
@@ -78,6 +81,7 @@
                 android:layout_height="wrap_content"
                 />
             <TextView
+                android:id="@+id/customer_id"
                 android:layout_width="0dp"
                 android:layout_weight="9"
                 android:layout_height="wrap_content"
@@ -86,6 +90,7 @@
                 android:textColor="#91b361"
                 android:textSize="16sp"
                 android:drawableTop="@drawable/customer_removebg"
+                android:clickable="true"
                 />
             <Space
                 android:layout_width="0dp"
