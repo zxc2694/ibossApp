@@ -2,8 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".InboundFragment">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,58 +20,88 @@
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1"
-                android:text="進貨系統"
-                android:textSize="24dp" />
-
+                android:layout_weight="3"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/inbound_raw_small"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="進貨系統"
+                    android:gravity="center_horizontal"
+                    android:textColor="#91b361"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:textSize="20dp" />
+            </LinearLayout>
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1" />
-
             <Button
+                android:drawableLeft="@drawable/hand_point"
+                android:drawablePadding="6dp"
                 android:layout_width="match_parent"
+                android:text="手動輸入"
+                android:textColor="#000000"
+                android:textSize="16dp"
                 android:layout_height="0dp"
-                android:layout_weight="3" />
-
+                android:background="#e6e0d4"
+                android:layout_weight="4" />
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1" />
-
             <Button
+                android:drawableLeft="@drawable/voice_chat"
+                android:drawablePadding="6dp"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="3" />
-
+                android:text="智能輸入"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:background="#ebcae3"
+                android:layout_weight="4" />
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1" />
-
             <Button
+                android:drawableLeft="@drawable/qr_code_access"
+                android:drawablePadding="6dp"
                 android:layout_width="match_parent"
+                android:text="QRcode輸入"
+                android:textColor="#000000"
+                android:textSize="16dp"
                 android:layout_height="0dp"
-                android:layout_weight="3" />
-
+                android:background="#e6e0d4"
+                android:layout_weight="4" />
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1" />
-
             <Button
+                android:drawableLeft="@drawable/barcode"
+                android:drawablePadding="6dp"
                 android:layout_width="match_parent"
+                android:text="Barcode輸入"
+                android:textColor="#000000"
+                android:textSize="16dp"
                 android:layout_height="0dp"
-                android:layout_weight="3" />
+                android:background="#e6e0d4"
+                android:layout_weight="4" />
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
-                android:layout_weight="10" />
+                android:layout_weight="7" />
         </LinearLayout>
-
         <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"

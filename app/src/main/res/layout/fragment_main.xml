@@ -27,8 +27,8 @@
                 android:layout_weight="9"
                 android:drawableTop="@drawable/inbound_removebg"
                 android:padding="4dp"
-                android:layout_gravity="center"
-                android:text="            進貨系統"
+                android:gravity="center_horizontal"
+                android:text=" 進貨系統"
                 android:textColor="#91b361"
                 android:textSize="16sp" />
             <Space
@@ -42,8 +42,8 @@
                 android:layout_weight="9"
                 android:layout_height="wrap_content"
                 android:padding="4dp"
-                android:layout_gravity="center"
-                android:text="           出貨系統"
+                android:gravity="center_horizontal"
+                android:text=" 出貨系統"
                 android:textColor="#91b361"
                 android:textSize="16sp"
                 android:drawableTop="@drawable/outbound_removebg"
@@ -72,7 +72,8 @@
                 android:layout_weight="9"
                 android:drawableTop="@drawable/report_removebg"
                 android:padding="4dp"
-                android:text="            報表系統"
+                android:gravity="center_horizontal"
+                android:text=" 報表系統"
                 android:textColor="#91b361"
                 android:textSize="16sp" />
             <Space
@@ -86,7 +87,8 @@
                 android:layout_weight="9"
                 android:layout_height="wrap_content"
                 android:padding="4dp"
-                android:text="      客戶管理系統"
+                android:gravity="center_horizontal"
+                android:text=" 客戶管理系統"
                 android:textColor="#91b361"
                 android:textSize="16sp"
                 android:drawableTop="@drawable/customer_removebg"

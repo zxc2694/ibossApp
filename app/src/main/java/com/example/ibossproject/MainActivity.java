@@ -20,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
     private ItemFragment f2;
     private InboundFragment f_inbound;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
         transaction.add(R.id.container, f1);
         transaction.commit();
         bottom_btn_color_update(0xa8edfa, 0x72cddd, 0x72cddd);
-
     }
 
     private void bottom_btn_color_update(@ColorInt int color1, @ColorInt int color2, @ColorInt int color3)
@@ -63,14 +60,11 @@ public class MainActivity extends AppCompatActivity {
         bottom_btn_color_update(0x72cddd, 0xa8edfa, 0x72cddd);
         Log.d("TAG", "bottomButton2 clicked!");
     }
-    public MainFragment getF1(){
-        return f1;
-    }
+
     public void set_inbound_fragment_click() {
         FragmentTransaction transaction = fmgr.beginTransaction();
         transaction.replace(R.id.container, f_inbound);
         transaction.commit();
         Log.d("TAG", "bottomButton2 clicked!");
     }
-
 }
