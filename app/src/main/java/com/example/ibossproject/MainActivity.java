@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private MainFragment f1;
     private ItemFragment f2;
     private InboundFragment f_inbound;
+    private InboundManualFragment f_inbound_manual;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         f1 = new MainFragment();
         f2 = new ItemFragment();
         f_inbound = new InboundFragment();
+        f_inbound_manual = new InboundManualFragment();
 
         FragmentTransaction transaction = fmgr.beginTransaction();
         transaction.add(R.id.container, f1);
@@ -64,6 +66,12 @@ public class MainActivity extends AppCompatActivity {
     public void set_inbound_fragment_click() {
         FragmentTransaction transaction = fmgr.beginTransaction();
         transaction.replace(R.id.container, f_inbound);
+        transaction.commit();
+        Log.d("TAG", "bottomButton2 clicked!");
+    }
+    public void set_inbound_manual_fragment_click() {
+        FragmentTransaction transaction = fmgr.beginTransaction();
+        transaction.replace(R.id.container, f_inbound_manual);
         transaction.commit();
         Log.d("TAG", "bottomButton2 clicked!");
     }

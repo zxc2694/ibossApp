@@ -46,6 +46,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1" />
             <Button
+                android:id="@+id/inbound_manual_icon"
                 android:drawableLeft="@drawable/hand_point"
                 android:drawablePadding="6dp"
                 android:layout_width="match_parent"
@@ -60,6 +61,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1" />
             <Button
+                android:id="@+id/inbound_intelligent_icon"
                 android:drawableLeft="@drawable/voice_chat"
                 android:drawablePadding="6dp"
                 android:layout_width="match_parent"
@@ -74,6 +76,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1" />
             <Button
+                android:id="@+id/inbound_qrcode_icon"
                 android:drawableLeft="@drawable/qr_code_access"
                 android:drawablePadding="6dp"
                 android:layout_width="match_parent"
@@ -88,6 +91,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1" />
             <Button
+                android:id="@+id/inbound_barcode_icon"
                 android:drawableLeft="@drawable/barcode"
                 android:drawablePadding="6dp"
                 android:layout_width="match_parent"
